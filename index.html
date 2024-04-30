@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informações sobre Beef, Sushi e Frango</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #menu {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .table-container table {
+    border-collapse: collapse;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+  th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: center;
+  }
+  td {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(171, 169, 169);
+  }
+  h1 {
+    font-size: 15px;
+    margin-left: 110px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+  }
+  #beef {
+    background-color: rgba(255, 0, 0, 0.868);
+  }
+  #Chicken {
+    background-color: pink;
+  }
+  #Sushi {
+    background-color: rgba(196, 196, 62, 0.719);
+  }
+
+  @media screen and (max-width: 768px) {
+    .table-container {
+      flex-direction: column;
+      margin: 0px 20px;
+    }
+    .table-container table {
+      width: 100%;
+      max-width: 400px;
+      margin-left: 2px ;
+    }
+  }
+  
+</style>
+</head>
+<body>
+  <div class="menu-container">
+    <h2 id="menu">Nosso Menu</h2>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <td>
+            <h1 id="Chicken">Chicken</h1>
+
+            O frango, símbolo de versatilidade na culinária, ganha uma nova vida nos cenários gastronômicos contemporâneos. Num mundo onde a fusão de culturas culinárias é uma arte, o frango se torna a tela em branco onde chefs habilidosos pintam seus sabores mais ousados.</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td>
+            <h1 id="beef">Beef</h1>
+            A carne bovina, venerada em churrascarias e restaurantes refinados, é celebrada no "Fogo Vivo". Aqui, a arte do churrasco é elevada a um novo patamar, onde cortes premium são cuidadosamente selecionados e preparados com maestria.</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td>
+            <h1 id="Sushi">Sushi</h1>
+
+            Dos clássicos como o nigiris e sashimis, que todos conhecem, até aos inovadores rolos fusion, como o "Dragon Roll" com tempurá de camarão e abacate, cada bocado é uma jornada através das tradições ancestrais e das influências modernas japonesas.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
